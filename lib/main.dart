@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:festivo/core/routers/app_router.dart';
 import 'package:festivo/core/theme/app_colors.dart';
-import 'package:festivo/components/AppText.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,27 +58,6 @@ class MyApp extends StatelessWidget {
             theme: AppTheme.lightTheme,
           );
         },
-      ),
-    );
-  }
-}
-
-/// Temporary Home Screen — replace with your actual screen
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Apptext(text: 'Festivo', fontSize: 20.sp, color: Colors.white),
-      ),
-      body: Center(
-        child: Apptext(
-          text: 'Plan Every Celebration',
-          fontSize: 18.sp,
-          color: AppColors.textPrimary,
-        ),
       ),
     );
   }

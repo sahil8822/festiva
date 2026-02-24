@@ -1,20 +1,26 @@
+import 'package:festivo/screens/home/screens/home_screens.dart';
 import 'package:go_router/go_router.dart';
-import 'package:festivo/main.dart';
 import 'package:festivo/screens/auth/onboding/onboding_screen.dart';
+import 'package:festivo/screens/auth/onboding/splash_screen.dart';
 
 /// App router configuration using GoRouter
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: SplashScreen.route,
   routes: [
     GoRoute(
-      path: '/',
-      name: 'onboarding',
+      path: SplashScreen.route,
+      name: SplashScreen.route,
+      builder: (context, state) => const SplashScreen(),
+    ),
+    GoRoute(
+      path: OnbodingScreen.route,
+      name: OnbodingScreen.route,
       builder: (context, state) => const OnbodingScreen(),
     ),
     GoRoute(
-      path: '/home',
-      name: 'home',
-      builder: (context, state) => const HomeScreen(),
+      path: HomeScreens.route,
+      name: HomeScreens.route,
+      builder: (context, state) => const HomeScreens(),
     ),
   ],
 );

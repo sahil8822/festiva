@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Apptext extends StatelessWidget {
+class AppText extends StatelessWidget {
   final String text;
-  final double fontSize;
-  final Color color;
+  final double? fontSize;
+  final Color? color;
   final FontWeight? fontWeight;
   final TextAlign? textAlign;
   final int? maxLines;
@@ -12,11 +12,11 @@ class Apptext extends StatelessWidget {
   final double? letterSpacing;
   final double? height;
 
-  const Apptext({
+  const AppText({
     super.key,
     required this.text,
-    required this.fontSize,
-    required this.color,
+    this.fontSize,
+    this.color,
     this.fontWeight,
     this.textAlign,
     this.maxLines,

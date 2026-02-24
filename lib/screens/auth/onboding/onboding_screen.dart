@@ -6,6 +6,7 @@ import 'package:festivo/components/AppText.dart';
 
 class OnbodingScreen extends StatefulWidget {
   const OnbodingScreen({super.key});
+  static const String route = '/onboding';
 
   @override
   State<OnbodingScreen> createState() => _OnbodingScreenState();
@@ -55,7 +56,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                 onPressed: () {
                   context.go('/home');
                 },
-                child: Apptext(
+                child: AppText(
                   text: "Skip",
                   color: AppColors.textSecondary,
                   fontSize: 16.sp,
@@ -108,7 +109,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                           ),
                         ),
                         SizedBox(height: 60.h),
-                        Apptext(
+                        AppText(
                           text: _onboardingData[index]['title'] as String,
                           textAlign: TextAlign.center,
                           color: AppColors.textPrimary,
@@ -117,7 +118,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                           letterSpacing: -0.5,
                         ),
                         SizedBox(height: 16.h),
-                        Apptext(
+                        AppText(
                           text: _onboardingData[index]['description'] as String,
                           textAlign: TextAlign.center,
                           color: AppColors.textSecondary,
@@ -168,7 +169,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                           ),
                           elevation: 0,
                         ),
-                        child: Apptext(
+                        child: AppText(
                           text: _currentIndex == _onboardingData.length - 1
                               ? "Get Started"
                               : "Next",
