@@ -15,3 +15,17 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+
+what i am want to add in this app 
+
+1. tent house service 
+2. tighting and decoration
+3. mehandi 
+4. weding card 
+5. DJ booking
+6. wedding garden booking 
+7. corprate evants
+8. food sarvice for evants 
+9 camramn and shoute 
